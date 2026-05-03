@@ -33,7 +33,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # 调用鑫源API
         try:
             response = client.chat.completions.create(
-                model="gpt-4o-mini",          # ← 这里改模型！推荐先用这个便宜又快
+                model="gemini-3.1-flash-lite-preview",          # ← 这里改模型！推荐先用这个便宜又快
                 # 其他可选模型示例：
                 # "gpt-4o" / "claude-3-5-sonnet" / "gemini-2.0-flash" / "deepseek-r1" / "qwen-max"
                 messages=[
